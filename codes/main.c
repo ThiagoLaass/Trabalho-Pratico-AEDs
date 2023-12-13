@@ -14,7 +14,7 @@ Notes: Este arquivo contem o programa principal do trabalho pratico de AEDs.
 
 Start date: 02 dez 2023
 
-// Repositorio: https://github.com/ThiagoLaass/Trabalho-Pratico-AEDs.git
+Repositorio: https://github.com/ThiagoLaass/Trabalho-Pratico-AEDs.git
 
 */
 
@@ -235,10 +235,10 @@ float realizarCompra(float produtos[4][4])
     printf("2 - Linha de Meia adulta lisa\n");
     printf("3 - Linha de Meia infantil estampada\n");
     printf("4 - Linha de Meia infantil lisa\n");
-    printf("Para sair, digite qualquer outro numero\n");
+    printf("5 - Para sair, digite qualquer outro numero\n");
     scanf("%d", &productSelection);
 
-    if (productSelection < 1 || productSelection > 4)
+    if (productSelection == 5)
     {
         return main();
     }
@@ -286,7 +286,6 @@ void exibirOperacoes(char operacoes[100][50], float valores[100], int numOperaco
 
 float acessoClientes(float produtos[4][4])
 {
-    setlocale(LC_CTYPE, "pt_BR.UTF-8");
 
     // Inicialização do catálogo de produtos, preços e preços de produção
     char produtosRelatorio[4][50] = {
@@ -297,9 +296,9 @@ float acessoClientes(float produtos[4][4])
 
     // Inicialização do vetor de operações
     char operacoes[4][50] = {
-        "Compra", 
-        "Exibir catalogo", 
-        "Exibir operacoes", 
+        "Compra",
+        "Exibir catalogo",
+        "Exibir operacoes",
         "Exibir lucro"};
 
     float valores[100];
@@ -322,7 +321,7 @@ float acessoClientes(float produtos[4][4])
 
         switch (opcao)
         {
-        case 1: 
+        case 1:
             numOperacoes++;
             exibirCatalogo(produtosRelatorio, produtos);
             break;
@@ -365,14 +364,6 @@ int main()
     else if (pessoa == 2)
     {
         printf("\n***************************** BEM-VINDO CLIENTE *****************************\n");
-        for (int i = 0; i < 4; i++)
-        {
-            for (int j = 0; j < 4; j++)
-            {
-                printf("%f\t", produtos[i][j]);
-            }
-            printf("\n");
-        }
         acessoClientes(produtos);
     }
     else
