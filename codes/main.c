@@ -203,7 +203,7 @@ int acessoFuncionario(int produtos[4][4])
 int acessoCliente()
 {
     int op;
-    printf("Bem vindo cliente\n");
+    printf("\n***************************** BEM-VINDO CLIENTE *****************************\n");
     printf("Informe a operacao desejada (0 - Compra, 1 - verificar o preço de um produto, 2 - verificar o custo de produção)\n");
     scanf("%d", &op);
 }
