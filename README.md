@@ -1,4 +1,4 @@
-Sistema de Controle de Vendas de Meias
+!Sistema de Controle de Vendas de Meias
 Este repositório contém um programa simples para auxiliar um pequeno produtor de vestuário a gerenciar suas vendas de meias. O programa foi desenvolvido para atender a algumas necessidades específicas do produtor, tais como:
 
 Controle de Estoque: Apenas permite a venda de produtos disponíveis em estoque.
