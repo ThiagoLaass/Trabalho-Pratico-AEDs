@@ -24,7 +24,7 @@ Start date: 02 dez 2023
   Linha de Meia adulta lisa         1       1       1       1
   Linha de Meia infantil estampada  1       1       1       1
   Linha de Meia infantil lisa       1       1       1       1
-  
+
   PrecoP = Preco de produção
     Lucro = Preco - PrecoP
 
@@ -44,14 +44,6 @@ void leiaProdutos(int produtos[4][4])
                 produtos[i][j] = i + 1;
         }
     }
-    for (int i = 0; i < 4; i++)
-    {
-        for (int j = 0; j < 4; j++)
-        {
-            printf("%d\t", produtos[i][j]);
-        }
-        printf("\n");
-    }
 }
 
 /*
@@ -62,17 +54,24 @@ void leiaProdutos(int produtos[4][4])
 int acessoFuncionario(int produtos[4][4])
 {
     int op;
+    int operations[100];
     int productSelection;
     
+    printf("\n***************************** BEM-VINDO FUNCIONARIO *****************************\n");
 
-    printf("Bem vindo funcionario\n");
-
+    NewChoice:
     printf("Informe o produto desejado\n");
     printf("1 - Linha de Meia adulta estampada\n");
     printf("2 - Linha de Meia adulta lisa\n");
     printf("3 - Linha de Meia infantil estampada\n");
     printf("4 - Linha de Meia infantil lisa\n");
     scanf("%d", &productSelection);
+
+        if (productSelection < 1 || productSelection > 4)
+        {
+            printf("Produto nao encontrado\n");
+            goto NewChoice;
+        }
 
     printf("Informe a operacao desejada\n");
     printf("1 - Verificar preco do produto\n");
@@ -126,21 +125,25 @@ int acessoFuncionario(int produtos[4][4])
         {
             printf("Informe o novo estoque das meias adultas estampadas\n");
             scanf("%d", &produtos[0][1]);
+            printf("Estoque cadastrado com sucesso\n");
         }
         else if (productSelection == 2)
         {
             printf("Informe o novo estoque das meias adultas lisas\n");
             scanf("%d", &produtos[1][1]);
+            printf("Estoque cadastrado com sucesso\n");
         }
         else if (productSelection == 3)
         {
             printf("Informe o novo estoque das meias infantis estampadas\n");
             scanf("%d", &produtos[2][1]);
+            printf("Estoque cadastrado com sucesso\n");
         }
         else if (productSelection == 4)
         {
             printf("Informe o novo estoque das meias infantis lisas\n");
             scanf("%d", &produtos[3][1]);
+            printf("Estoque cadastrado com sucesso\n");
         }
         else
             printf("Produto nao encontrado\n");
@@ -152,25 +155,28 @@ int acessoFuncionario(int produtos[4][4])
         {
             printf("Informe o novo preco das meias adultas estampadas\n");
             scanf("%d", &produtos[0][0]);
+            printf("Preco cadastrado com sucesso\n");
         }
         else if (productSelection == 2)
         {
             printf("Informe o novo preco das meias adultas lisas\n");
             scanf("%d", &produtos[1][0]);
+            printf("Preco cadastrado com sucesso\n");
         }
         else if (productSelection == 3)
         {
             printf("Informe o novo preco das meias infantis estampadas\n");
             scanf("%d", &produtos[2][0]);
+            printf("Preco cadastrado com sucesso\n");
         }
         else if (productSelection == 4)
         {
             printf("Informe o novo preco das meias infantis lisas\n");
             scanf("%d", &produtos[3][0]);
+            printf("Preco cadastrado com sucesso\n");
         }
         else
             printf("Produto nao encontrado\n");
-
         break;
 
     default:
@@ -178,27 +184,17 @@ int acessoFuncionario(int produtos[4][4])
         return acessoFuncionario(produtos);
     }
 
-    for (int i = 0; i < 4; i++)
-    {
-        for (int j = 0; j < 4; j++)
-        {
-            printf("%d\t", produtos[i][j]);
-        }
-        printf("\n");
-    }
-
     int choiceNewOp;
     printf("Deseja realizar outra operacao? (1 - sim, 2 - nao)\n");
-    scanf("%d", choiceNewOp);
+    scanf("%d", &choiceNewOp);
     
-
     if ( choiceNewOp == 1 )
         return acessoFuncionario(produtos);
     else
-        return 0;
+        main();
 }
 
-// *****************************************************TÉRMINO DA FUNÇÂO acessoFuncionario************************************************************
+// ***************************************************** TÉRMINO DA FUNÇÂO acessoFuncionario *****************************************************
 
 /*
     Função para lidar o acesso dos clientes, tendo a opção de comprar e verificar preço do produto.
