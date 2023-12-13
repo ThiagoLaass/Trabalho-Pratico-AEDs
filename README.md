@@ -20,7 +20,7 @@ Este repositório contém um programa simples para auxiliar um pequeno produtor 
 Relatório de Meias em Estoque: Gera um relatório detalhado das meias disponíveis para venda, incluindo tipo, padrão e quantidade em estoque.
 Relatório de Vendas do Dia e Lucro Obtido: Produz um resumo das vendas realizadas no dia, incluindo quantidade vendida, lucro obtido e outros dados relevantes.
 Uso do Programa
-O programa foi desenvolvido em [C] e utiliza uma estrutura de matriz para armazenar e atualizar os dados dos produtos.
+O programa foi desenvolvido em C e utiliza uma estrutura de matriz para armazenar e atualizar os dados dos produtos.
 
 ## Autores
 Thiago Borges Laass, Matheus E. Marinho de Miranda H.
