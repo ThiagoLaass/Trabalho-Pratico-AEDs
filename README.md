@@ -17,10 +17,12 @@ Este repositório contém um programa simples para auxiliar um pequeno produtor 
 * O programa registra as vendas realizadas durante o dia, atualizando automaticamente a quantidade em estoque de cada produto após cada venda.
 
 ## Relatórios
-Relatório de Meias em Estoque: Gera um relatório detalhado das meias disponíveis para venda, incluindo tipo, padrão e quantidade em estoque.
-Relatório de Vendas do Dia e Lucro Obtido: Produz um resumo das vendas realizadas no dia, incluindo quantidade vendida, lucro obtido e outros dados relevantes.
-Uso do Programa
-O programa foi desenvolvido em C e utiliza uma estrutura de matriz para armazenar e atualizar os dados dos produtos.
+* Relatório de Meias em Estoque: Gera um relatório detalhado das meias disponíveis para venda, incluindo tipo, padrão e quantidade em estoque.
+* Relatório de Vendas do Dia e Lucro Obtido: Produz um resumo das vendas realizadas no dia, incluindo quantidade vendida, lucro obtido e outros dados relevantes.
+
+## Uso do Programa
+O programa foi desenvolvido em C e utiliza uma estrutura de matriz para armazenar e atualizar os dados dos produtos. Ao executa-lo, será perguntando o perfil atual, o usuario deve então escolher entre "funcionario" ou "cliente".
+Funcionarios possuem a capacidade de editar dados dos produtos, como o estoque, preço e custo de produção. Se iniciado como cliente, o mesmo terá acesso apenas a funcionalidades como verificar preço, estoque e fazer a compra de algum(s) produtos.
 
 ## Autores
 Thiago Borges Laass, Matheus E. Marinho de Miranda H.
