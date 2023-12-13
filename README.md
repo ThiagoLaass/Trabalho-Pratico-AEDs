@@ -22,8 +22,5 @@ Relatório de Vendas do Dia e Lucro Obtido: Produz um resumo das vendas realizad
 Uso do Programa
 O programa foi desenvolvido em [C] e utiliza uma estrutura de matriz para armazenar e atualizar os dados dos produtos.
 
-## Contribuição
-Contribuições são bem-vindas! Se você tem sugestões para melhorar este programa ou deseja adicionar funcionalidades adicionais, sinta-se à vontade para fazer um fork do repositório e enviar um pull request com suas alterações.
-
-#Autores
+## Autores
 [Thiago Borges Laass, Matheus E. Marinho de Miranda H.]
