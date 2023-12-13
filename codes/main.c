@@ -78,7 +78,7 @@ int acessoFuncionario(int produtos[4][4])
     printf("2 - Verificar estoque do produto\n");
     printf("3 - Alterar estoque do produto\n");
     printf("4 - Alterar preco do produto\n");
-    scanf("%d", &op);
+    scanf("%d", &op); 
 
     switch (op)
     {
