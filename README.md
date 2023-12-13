@@ -22,7 +22,7 @@ Este repositório contém um programa simples para auxiliar um pequeno produtor 
 
 ## Uso do Programa
 O programa foi desenvolvido em C e utiliza uma estrutura de matriz para armazenar e atualizar os dados dos produtos. Ao executa-lo, será perguntando o perfil atual, o usuario deve então escolher entre "funcionario" ou "cliente".
-Funcionarios possuem a capacidade de editar dados dos produtos, como o estoque, preço e custo de produção. Se iniciado como cliente, o mesmo terá acesso apenas a funcionalidades como verificar preço, estoque e fazer a compra de algum(s) produtos.
+Funcionarios possuem a capacidade de editar dados dos produtos, como o estoque, preço e custo de produção. Se iniciado como cliente, o mesmo terá acesso apenas a funcionalidades como verificar preço, estoque e fazer a compra de algum(s) produto(s).
 
 ## Autores
 Thiago Borges Laass, Matheus E. Marinho de Miranda H.
