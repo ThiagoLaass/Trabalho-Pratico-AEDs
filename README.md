@@ -23,4 +23,4 @@ Uso do Programa
 O programa foi desenvolvido em [C] e utiliza uma estrutura de matriz para armazenar e atualizar os dados dos produtos.
 
 ## Autores
-[Thiago Borges Laass, Matheus E. Marinho de Miranda H.]
+Thiago Borges Laass, Matheus E. Marinho de Miranda H.
