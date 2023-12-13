@@ -54,10 +54,7 @@ void leiaProdutos(int produtos[4][4])
 int acessoFuncionario(int produtos[4][4])
 {
     int op;
-    int operations[100];
     int productSelection;
-    
-    printf("\n***************************** BEM-VINDO FUNCIONARIO *****************************\n");
 
     NewChoice:
     printf("Informe o produto desejado\n");
@@ -65,12 +62,12 @@ int acessoFuncionario(int produtos[4][4])
     printf("2 - Linha de Meia adulta lisa\n");
     printf("3 - Linha de Meia infantil estampada\n");
     printf("4 - Linha de Meia infantil lisa\n");
+    printf("Para sair, digite qualquer outro numero\n");
     scanf("%d", &productSelection);
 
         if (productSelection < 1 || productSelection > 4)
         {
-            printf("Produto nao encontrado\n");
-            goto NewChoice;
+            main();
         }
 
     printf("Informe a operacao desejada\n");
@@ -203,7 +200,7 @@ int acessoFuncionario(int produtos[4][4])
 int acessoCliente()
 {
     int op;
-    printf("\n***************************** BEM-VINDO CLIENTE *****************************\n");
+    
     printf("Informe a operacao desejada (0 - Compra, 1 - verificar o preço de um produto, 2 - verificar o custo de produção)\n");
     scanf("%d", &op);
 }
@@ -218,17 +215,21 @@ int main()
 
     leiaProdutos(produtos);
 
-    printf("Informe seu id de usuario (1-funcionario, 2-cliente)\n");
+    printf("Informe seu id de usuario (1 - Funcionario, 2 - Cliente, 3 - Encerrar)\n");
     scanf("%d", &pessoa);
 
     if (pessoa == 1)
     {
+        printf("\n***************************** BEM-VINDO FUNCIONARIO *****************************\n");
         acessoFuncionario(produtos);
     }
     else if (pessoa == 2)
     {
+        printf("\n***************************** BEM-VINDO CLIENTE *****************************\n");
         acessoCliente(produtos);
     }
+    else 
+        return 0;
 
     return 0;
 }
