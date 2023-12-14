@@ -71,7 +71,7 @@ void acessoFuncionario(float produtos[4][4])
     {
         return main();
     }
-
+    
     printf("Informe a operacao desejada\n");
     printf("1 - Verificar preco do produto\n");
     printf("2 - Verificar estoque do produto\n");
@@ -79,7 +79,7 @@ void acessoFuncionario(float produtos[4][4])
     printf("4 - Alterar preco do produto\n");
     scanf("%d", &op);
 
-    switch (op) // Função de switch para controlar as operações desejadas
+    switch (op) // Função de switch para controlar as operações desejadas. A matriz produtos é mostrada nos casos 1 e 2 e é atualizada nos casos 3 e 4
     {
     case 1:
 
@@ -219,7 +219,7 @@ float calcularLucro(float totalVendas, float totalProducao)
     return totalVendas - totalProducao;
 }
 
-// Função para realizar a compra, pegando os parâmetros passados na função 'acessoCliente'
+// Função para realizar a compra, pegando os parâmetros passados na função 'acessoCliente'. Permitindo a escolha do produto a ser comprado a saída da função. 
 
 float realizarCompra(float produtos[4][4])
 {
@@ -270,7 +270,7 @@ float realizarCompra(float produtos[4][4])
         return totalCompra;
 }
 
-// Função para exibir as operações realizadas
+// Função para exibir as operações realizadas, pegando parâmetros passados pela função 'acessoCliente'
 void exibirOperacoes(char operacoes[100][50], float valores[100], int numOperacoes)
 {
     printf("Operacoes realizadas:\n");
@@ -281,7 +281,7 @@ void exibirOperacoes(char operacoes[100][50], float valores[100], int numOperaco
 }
 
 /*
-    Função para lidar o acesso dos clientes, tendo a opção de comprar e verificar preço do produto.
+    Função para lidar o acesso dos clientes, tendo a opção de comprar, verificar preço do produto, exibir operações feitas e exibir o lucro total.
 */
 
 float acessoClientes(float produtos[4][4])
@@ -307,6 +307,7 @@ float acessoClientes(float produtos[4][4])
     int opcao;
     float totalVendas = 0;
 
+    //repetição para exibir o menu que possibilita a escolha da ação a ser tomada
     do
     {
         printf("\nEscolha uma opcao:\n");
@@ -343,13 +344,14 @@ float acessoClientes(float produtos[4][4])
     return 0;
 }
 
-// Função principal
 
+
+// Função principal. Nessa função, parâmetros são passados para as outras funções, além de chamar as outras duas funções mais importantes 'acessoFuncionario' e 'acessoCliente'
 int main()
 {
     int pessoa;
 
-    float produtos[4][4];
+    float produtos[4][4]; 
 
     leiaProdutos(produtos); // Função para atribuir valores iniciais para a matriz de produtos
 
