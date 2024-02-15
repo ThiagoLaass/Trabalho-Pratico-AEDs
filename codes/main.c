@@ -368,7 +368,7 @@ int main()
         printf("\n***************************** BEM-VINDO CLIENTE *****************************\n");
         acessoClientes(produtos);
     }
-    else
+    else if (pessoa == 3)
         return 0;
 
     return 0;
