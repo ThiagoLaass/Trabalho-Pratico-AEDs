@@ -25,4 +25,4 @@ O programa foi desenvolvido em C e utiliza uma estrutura de matriz para armazena
 Funcionarios possuem a capacidade de editar dados dos produtos, como o estoque, preço e custo de produção. Se iniciado como cliente, o mesmo terá acesso apenas a funcionalidades como verificar preço, estoque e fazer a compra de algum(s) produto(s).
 
 ## Autores
-Thiago Borges Laass, Matheus E. M. de M. Hermenegildo
+Thiago Borges Laass, Matheus E. M. de Miranda H.
